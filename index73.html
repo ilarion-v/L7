@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function inputNum() {
+    let lastInput = null;
+    for (let i = 0; i < 10; i++) {
+        let input = prompt("Введіть число більше 100");
+        lastInput = parseInt(input);
+
+        if (lastInput > 100 || isNaN(lastInput)) {
+            console.log(`Ваше число - ${lastInput}`);
+            return;
+        }
+    }
+    console.log(`Введене число - ${lastInput}`);
+}
+
+
+    inputNum();
+
+</script>
+</body>
+</html>
